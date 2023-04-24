@@ -1,0 +1,73 @@
+[
+  {
+    "question": "First Indian woman to win the Ashoka Chakra",
+    "choices": [
+      "Neerja Bhanot",
+      "Karnam Malleswari",
+      "Janaki Ammal",
+      "Vijaya Lakshmi Pandit"
+    ],
+    "answerIndex": "Neerja Bhanot"
+  },
+  {
+    "question": "Largest planet in our solar system",
+    "choices": [
+      "Mars",
+      "Jupiter",
+      "Venus",
+      "Saturn"
+    ],
+    "answerIndex": "Jupiter"
+  },
+  {
+    "question": "First Indian to win a Nobel Prize",
+    "choices": [
+      "Dmitri Mendeleev",
+      "Rabindranath Tagore",
+      "Malavath Purna",
+      "Shaktikanta Das"
+    ],
+    "answerIndex": "Rabindranath Tagore"
+  },
+  {
+    "question": "Which element is a diamond made of",
+    "choices": [
+      "Zinc",
+      "Iron",
+      "Carbon",
+      "Sulphur"
+    ],
+    "answerIndex": "Carbon"
+  },
+  {
+    "question": "Highest temperature that mercury thermometers can measure",
+    "choices": [
+      "100 degree C",
+      "200 degree C",
+      "250 degree C",
+      "360 degree C"
+    ],
+    "answerIndex": "360 degree C"
+  },
+  {
+    "question": "Fastest animal on land",
+    "choices": [
+      "Cheetah",
+      "Tiger",
+      "Lion",
+      "Giraffe"
+    ],
+    "answerIndex": "Cheetah"
+  },
+  {
+    "question": "Hardest substance available on earth",
+    "choices": [
+      "Iron",
+      "Diamond",
+      "Gold",
+      "silver"
+    ],
+    "answerIndex": "Diamond"
+  }
+  
+]

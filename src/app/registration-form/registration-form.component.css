@@ -1,0 +1,16 @@
+.container{
+    background-color:rgb(171, 181, 194);
+   padding-bottom: 20px;
+   padding-top: 20px;
+   align-content: center;
+   
+   align-self:center;
+}
+.a{
+    text-align: center;
+    font-size:larger;
+    font-weight: 500;
+}
+.form-group{
+    padding-bottom: 10px;
+}
