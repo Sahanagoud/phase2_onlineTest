@@ -18,7 +18,8 @@
           <a class="nav-link" routerLink="/registration-form">Registration</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/add-q">Add Question</a>
+          <a style="cursor:pointer;" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+         <!-- <a class="nav-link" routerLink="/add-q">-->Add Question</a>
         </li>  
       </ul>
     </div>
@@ -27,6 +28,49 @@
 <div class="w3-container">  
 <router-outlet></router-outlet>
 </div>
+
+<!--modal login popup-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" validate>Admin Login Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form #loginForm="ngForm" 
+      (ngSubmit) = "onSubmit()">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email"
+            [(ngModel)]="user.email" #email="ngModel" required>
+        </div>
+        <div *ngIf="loginForm.submitted && email.errors">
+           <p *ngIf = "email.errors && email.errors['required']">Email is required</p>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password"
+            [(ngModel)] = "user.password" #password = "ngModel" required>
+        </div>
+        <div *ngIf="loginForm.submitted && password.errors">
+           <p *ngIf = "password.errors && password.errors['required']">Password is required</p>
+        </div>
+        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+      </form>
+      </div>
+      
+      </div>
+  </div>
+</div>
+<!--modal end-->
+
+
+
+
+
+
+
 <!--footer-->
 
 <footer class=" f mt-5 navbar navbar-expand-sm bg-secondary navbar-dark fixed-bottom">

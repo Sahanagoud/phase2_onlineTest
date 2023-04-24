@@ -47,7 +47,7 @@ export class QuizComponent implements OnInit{
   }
 
   isCorrectAnswer(questionIndex:number) {  
-    const isCorrect = this.questions[questionIndex].answerIndex === this.selectedOption;
+    const isCorrect = this.questions[questionIndex].answerIndex == this.selectedOption;
   
     if (isCorrect) {
       this.numberOfCorrectAnswers++;
@@ -65,10 +65,14 @@ export class QuizComponent implements OnInit{
 
   getResult(){
     this.viewResult = true;
+    if(this.viewResult == true)
+    {
+      alert("Your score is:"+this.numberOfCorrectAnswers+"/"+this.questions.length);
+    }
   }
 
   isAllQuestionAnswered(){
-    if(this.questions.length === this.answered.length){
+    if(this.questions.length == this.answered.length){
 
       return true;
     }

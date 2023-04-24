@@ -20,8 +20,11 @@ export class AddQComponent {
   }
 
   addOption() {
+    if(this.newQuestion.choices.length<=3)
+    {
     this.newQuestion.choices.push('');
     this.optionValues.push('');
+    }
   }
 
   removeOption(index: number) {

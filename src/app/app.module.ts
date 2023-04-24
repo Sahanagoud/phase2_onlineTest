@@ -18,7 +18,7 @@ import { AddQComponent } from './add-q/add-q.component';
     QuizComponent,
     LoginFormComponent,
     RegistrationFormComponent,
-    AddQComponent
+    AddQComponent,
   ],
   imports: [
     BrowserModule,

@@ -68,6 +68,15 @@
       "silver"
     ],
     "answerIndex": "Diamond"
+  },
+  {
+    "question": "Color of the Elephant is",
+    "choices": [
+      "Red",
+      "White",
+      "Grey",
+      "Black"
+    ],
+    "answerIndex": "Grey"
   }
-  
 ]
