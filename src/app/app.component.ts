@@ -23,17 +23,17 @@ export class AppComponent {
     this.ds.checkLogin(this.user).subscribe({
       next:data=>{
         if(data){
-          alert("Login successfull");
+          //alert("Login successfull");
           //sessionStorage.setItem("user",this.user.email);
           if(this.user.password==="admin1234"){
-              alert("Welcon Admin");
+              alert("Login Successful\nWelcome Admin");
               this.router.navigate(['/add-q']);
           }
           
       }},
       error:err=>{
         if(err){
-          alert("Login unsucessfull\n Only Admin can access this page");
+          alert("Login unsucessfull\nOnly Admin can access this page");
           this.user = {email:'',password:''};
           this.router.navigate(['/login']);
 

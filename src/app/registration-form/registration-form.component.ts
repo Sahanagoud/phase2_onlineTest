@@ -21,7 +21,7 @@ export class RegistrationFormComponent {
   });
 
   submit(){
-    this.ds.createNewUser(this.RegistrationForm.value).subscribe(data=>alert(data));    
+    this.ds.createNewUser(this.RegistrationForm.value).subscribe(data=>alert("Registration Successful"));    
     console.table(this.RegistrationForm.value);
     this.router.navigate(['/login']);
   }

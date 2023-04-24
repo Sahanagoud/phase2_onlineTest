@@ -10,5 +10,17 @@
     "lastName": "gowda",
     "email": "sahana.goud14@gmail.com",
     "password": "admin1234"
+  },
+  {
+    "firstName": "tanush",
+    "lastName": "gowda",
+    "email": "tanush.goud@gmail.com",
+    "password": "123456"
+  },
+  {
+    "firstName": "tanush",
+    "lastName": "gowda",
+    "email": "tanush.goud@gmail.com",
+    "password": "123456"
   }
 ]
