@@ -78,15 +78,5 @@
       "Black"
     ],
     "answerIndex": "Grey"
-  },
-  {
-    "question": "a",
-    "choices": [
-      "a",
-      "b",
-      "c",
-      "d"
-    ],
-    "answerIndex": "a"
   }
 ]
