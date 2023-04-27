@@ -17,9 +17,9 @@ app.get('*', function(req,res){
    res.sendFile(path.join(__dirname,'dist/online-test-saha/index.html'));
 });
 
-
-app.listen(3000,function(){
-    console.log("listening on port 3000")
+const port = process.env.PORT || 3000;
+app.listen(port,function(){
+    console.log(`listening on port ${port}`);
 });
 
 
