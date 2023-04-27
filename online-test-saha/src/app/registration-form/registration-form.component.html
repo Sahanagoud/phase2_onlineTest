@@ -1,0 +1,59 @@
+
+<div class="container">
+    <div class="a">REGISTRATION</div>
+
+    <form [formGroup] = "RegistrationForm" (ngSubmit) = "submit()" >
+        <div class="form-group">
+        First Name: <input type="text" name="firstName" class="form-control"
+        formControlName = "firstName">
+
+        <div *ngIf = "f['firstName'].touched && f['firstName'].invalid">
+            <div *ngIf = "f['firstName'].errors && f['firstName'].errors['required']">
+                FirstName is required
+            </div>
+
+            <div *ngIf = "f['firstName'].errors && f['firstName'].errors['minlength']">
+                FirstName should be minimum 3 characters long
+            </div>
+        </div>
+</div>
+<div class="form-group">
+        Last Name: <input type="text" name="lastName" class="form-control"
+        formControlName = "lastName">
+        <div *ngIf = "f['lastName'].touched && f['lastName'].invalid">
+            <div *ngIf = "f['lastName'].errors && f['lastName'].errors['required']">
+                LastName is required
+            </div>
+
+            <div *ngIf = "f['lastName'].errors && f['lastName'].errors['minlength']">
+                LastName should be minimum 3 characters long
+            </div>
+        </div>
+</div>
+<div class="form-group">
+        Email: <input type="email" name="email" class="form-control"
+        formControlName = "email">
+
+        <div *ngIf = "f['email'].touched && f['email'].invalid">
+            <div *ngIf = "f['email'].errors && f['email'].errors['required']">
+                Email is required
+            </div>
+
+            <div *ngIf = "f['email'].errors && f['email'].errors['pattern']">
+                Invalid email format
+            </div>
+
+            
+        </div>
+        </div>
+        <div class="form-group">
+        Password: <input type="password" name="password" class="form-control"
+        formControlName = "password">
+        </div>
+        <div class="form-group">
+        <button class="btn btn-primary" type="submit" [disabled] = "RegistrationForm.invalid">Submit</button>
+            </div>
+
+
+    </form>
+</div>

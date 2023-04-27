@@ -1,0 +1,20 @@
+.carousel{
+    padding-top: 0%;
+    padding-bottom:20px;
+    padding-left:20px;
+  
+    width: 100%;
+    
+
+}
+.d-block{
+    width: 98%;
+    height: 300px;
+    align-self: center;
+}
+.w3-container{
+    text-align: center;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}

@@ -1,0 +1,14 @@
+.correct{
+    color:green;
+}
+
+.wrong{
+    color:red;
+}
+.card-body{
+    background-color:rgb(171, 181, 194);
+
+}
+.container{
+    padding-bottom: 30px;
+}

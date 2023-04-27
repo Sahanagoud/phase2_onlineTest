@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*end of common styles*/
+
+/*page background*/
+.page-bg{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background: url(src/assets/bg.jpg) center no-repeat;
+    background-size: cover;
+}
+/*end of page background*/
+
+.logo{
+    width: 30px;
+    height: 30px;
+    position:relative;
+    
+}
+.w3-container{
+    content-visibility:auto;
+    padding-top: 80px;
+}
+.nav-item{
+    font-size:larger;
+    font-weight: 500;
+    /*padding-top: 18px;*/
+}
+.navbar{
+    align-self: center;
+   
+}
+.modal-content{
+    padding:30px;
+    background-color:rgb(171, 181, 194);
+
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+ }
